@@ -149,10 +149,12 @@ section .two-piece{
     grid-template-columns: 1fr 1fr;
 
 }
-.two-piece-1 .text{
+.two-piece-1 .text,.two-piece-2 .text{
     font-family: 'Barlow', sans-serif;
-    padding:2rem;
     font-size:1.1rem;
+}
+.two-piece-1 .text{
+    padding:2rem;
     text-align: left;
     grid-column: 1;
 }
