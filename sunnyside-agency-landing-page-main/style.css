@@ -20,6 +20,9 @@ img{
     font-family: 'Fraunces', serif;
   
 }
+.mobile-img{
+    display:none;
+}
 
                         /* showcase */
             
@@ -292,6 +295,12 @@ section h4{
 }
 
      /* footer */
+.pc-img{
+    display: none;
+}
+.mobile-img{
+    display:initial;
+}
 
 footer{
     font-family: 'Barlow', sans-serif;
@@ -329,6 +338,10 @@ a:hover{
  /* media query*/
 
 @media(max-width:375px){
+.showcase{
+        background: url('images/mobile/image-header.jpg') no-repeat center;
+        background-size: cover;
+    }
 .showcase .pc-menu{
     display: none;
 }
@@ -365,14 +378,33 @@ section .two-piece{
     width:40px;
 }
 .showcase{
-    height: 80vh;
+    height: 70vh;
     
 }
 .showcase-mid p{
     letter-spacing:initial;
      font-size:2.2rem;
-     margin-top: 5rem;
-     margin-bottom: 1.9rem;
+     margin-top: 7rem;
+     margin-bottom: 3rem;
  }
+ section .section-bg-1{
+    background:url('images/mobile/image-graphic-design.jpg') center;
+    background-size: cover;
+}
+section .section-bg-2{
+    background:url('images/mobile/image-photography.jpg') center;
+    background-size: cover;
+}
+#photo-text-1{
+    color:hsl(167, 40%, 24%);
+   font-family: 'Barlow', sans-serif;
+    padding:0 1rem 1.4rem 1rem;
+}
+#photo-text-2{
+   color: hsl(198, 62%, 26%);
+   font-family: 'Barlow', sans-serif;
+   padding:0 1rem 1.4rem 1rem;
+
+}
 }
 
