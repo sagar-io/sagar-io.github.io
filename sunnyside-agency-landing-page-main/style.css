@@ -387,6 +387,15 @@ section .two-piece{
      margin-top: 7rem;
      margin-bottom: 3rem;
  }
+ .two-piece-1 .text{
+    grid-column: 1;
+}
+.two-piece-1 div{
+    grid-column:1;
+}
+.two-piece-1{
+    grid-auto-flow: initial;
+}
  section .section-bg-1{
     background:url('images/mobile/image-graphic-design.jpg') center;
     background-size: cover;
