@@ -146,6 +146,9 @@ img{
 	align-items:center;
 
 }
+.info div p{
+	text-align:justify;
+}
 
 /*portfolio*/
 .portfolio{
