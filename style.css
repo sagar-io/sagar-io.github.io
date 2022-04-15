@@ -111,6 +111,7 @@ header h1{
 
 /* tab - styling */
 .tab-item-inner{
+    border-radius: 0.5rem 0.5rem 0 0 ;
     width: 90%;
     background-color: rgb(6, 0, 0);
     display: grid;
@@ -138,19 +139,18 @@ header h1{
 
 .tab-content{
     background-color: black;
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
     padding: 0.4rem;
+    display: none;
+    border-radius: 0 0 0.5rem 0.5rem;
+
+    
 }
 
-
-
-
-
-
-
-
+.show{
+    display: grid !important;
+}
 
 /* section--Projects */
 
@@ -269,6 +269,9 @@ footer p{
 
 footer p{
     font-size: 1.2rem;
+}
+ .tab-content{
+   grid-template-columns: repeat(1, 1fr);
 }
 
 }
