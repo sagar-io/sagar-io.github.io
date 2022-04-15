@@ -8,6 +8,10 @@ body{
 *{
    box-sizing: border-box;
  }
+
+ a{
+     text-decoration: none;
+ }
                   /* Header */
 
 header h1{
@@ -21,7 +25,6 @@ header h1{
                 /* showcase */
 .showcase{
   height: 100vh;
-  /* width: 100vw; */
   margin-bottom: 3rem;
 }
 
@@ -53,11 +56,9 @@ header h1{
 .mid-showcase .text{
     margin:0;
     width: 50%;
-    /* margin-top: 6rem; */
     line-height:4rem;
     float: left;
     font-size: 1.7rem;
-    /* background-color: rgb(114, 98, 78); */
     padding:0 0 0 2rem ;
 }
 
@@ -69,9 +70,7 @@ header h1{
 }
 
 .mid-showcase .main-img{
-
     width:50%;
-    /* background-color: chartreuse; */
     height: auto;
     float: left;
     margin:0;
@@ -111,6 +110,7 @@ header h1{
 
 /* tab - styling */
 .tab-item-inner{
+    box-shadow: 0 3px 8px -2px gray;
     border-radius: 0.5rem 0.5rem 0 0 ;
     width: 90%;
     background-color: rgb(6, 0, 0);
@@ -135,6 +135,8 @@ header h1{
 .tab-content-inner{
     width: 90%;
     margin: auto;
+    box-shadow: 0 3px 8px -2px gray;
+
 }
 
 .tab-content{
@@ -230,7 +232,7 @@ footer p{
 
 /* media query */
 
-@media(max-width:570px){
+@media(max-width:600px){
     .showcase  header h1{
         font-size: 4rem;
     }
@@ -274,4 +276,38 @@ footer p{
    grid-template-columns: repeat(1, 1fr);
 }
 
+.mid-showcase .text{
+    margin: 1rem 0;
+    width: 90%;
+    line-height: 2rem;
+    font-size: 1rem;
+    padding:0 0 0 1rem;
 }
+h1.name{
+    margin: 1rem 0;
+}
+.showcase{
+    margin-bottom: 2rem;
+  }
+}
+
+
+
+
+@media(max-width: 480px) {
+    body{
+        background-color: rgba(208, 211, 228, 0.748);
+    }
+    
+.mid-showcase .btn-hire{
+    background-color: rgba(214, 241, 241, 0.846);
+    border:2px solid rgba(38, 0, 255, 0.904);; 
+    top: 50px;
+    right:-20px;
+    transform: rotate(90deg);
+    }
+    .mid-showcase a.btn-hire{
+        color:rgba(38, 0, 255, 0.904);;
+    }
+}
+
