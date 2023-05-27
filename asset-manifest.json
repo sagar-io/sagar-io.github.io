@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.85a4a59c.css",
+    "main.js": "/static/js/main.e4c5d18a.js",
+    "static/media/cv.pdf": "/static/media/cv.20cdb91ffa9cfb0019c4.pdf",
+    "static/media/freelancing99.png": "/static/media/freelancing99.1521af2e89bdba19b0c9.png",
+    "static/media/coder01.png": "/static/media/coder01.59e33ec5cc396c4645fc.png",
+    "static/media/about09-opt.jpg": "/static/media/about09-opt.651b9f27e3b8b6825d88.jpg",
+    "index.html": "/index.html",
+    "main.85a4a59c.css.map": "/static/css/main.85a4a59c.css.map",
+    "main.e4c5d18a.js.map": "/static/js/main.e4c5d18a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.85a4a59c.css",
+    "static/js/main.e4c5d18a.js"
+  ]
+}
