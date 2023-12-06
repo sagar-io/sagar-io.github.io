@@ -1,22 +1,20 @@
 import cv from "../../../assets/cv/cv.pdf";
-import {motion} from 'framer-motion'
-import {useEffect, useRef} from 'react'
+import { motion } from "framer-motion";
+import { useEffect, useRef } from "react";
 
 function Contact() {
   const popupRef = useRef();
 
   useEffect(() => {
-      setTimeout(() => {
-        popupRef.current.style.transform = 'translate(-200%)'
-        popupRef.current.style.opacity = '0'
-      }, 4000);
-  }, [])
+    setTimeout(() => {
+      popupRef.current.style.transform = "translate(-200%)";
+      popupRef.current.style.opacity = "0";
+    }, 4000);
+  }, []);
 
   return (
     <div className="contact-wrapper">
-      <motion.div 
-      className="parcel-wrapper"
-      >
+      <motion.div className="parcel-wrapper">
         <div className="parcel">
           <div className="top-cover"></div>
           <div className="left-cover"></div>
@@ -47,6 +45,7 @@ function Contact() {
             <div className="social-icons">
               <a
                 className="social-icon linkedin"
+                rel="noreferrer"
                 href="https://www.linkedin.com/in/sagar-sharma-developer/"
                 target="_blank"
                 title="LinkedIn Profile"
@@ -55,6 +54,7 @@ function Contact() {
               </a>
               <a
                 className="social-icon github"
+                rel="noreferrer"
                 href="https://github.com/sagar-io"
                 target="_blank"
                 title="GitHub Profile"
@@ -63,6 +63,7 @@ function Contact() {
               </a>
               <a
                 className="social-icon whatsapp"
+                rel="noreferrer"
                 href="//api.whatsapp.com/send?phone=919119703846&text=Hi_Sagar_?"
                 title="Chat on whatsapp"
                 target="_blank"
@@ -74,8 +75,9 @@ function Contact() {
         </div>
         <div className="parcel-shadow"></div>
 
-        <div ref={popupRef} className="intro-popup">Checkout the Parcel</div>
-
+        <div ref={popupRef} className="intro-popup">
+          Checkout the Parcel
+        </div>
       </motion.div>
     </div>
   );
