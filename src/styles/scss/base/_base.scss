@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $fourth-clr;
+    color: #ffffff;
+    margin: 0;
+    user-select: none;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
+a {
+    transition: 0.5s;
+    text-decoration: none;
+}
+

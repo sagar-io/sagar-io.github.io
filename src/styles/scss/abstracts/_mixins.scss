@@ -1,0 +1,34 @@
+@mixin flex($alignment:'column') {
+    display: flex;
+    flex-direction: $alignment;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@mixin grid($fraction) {
+    display: grid;
+    grid-template-columns: repeat($fraction, 1fr);
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin bg-img($url, $width, $height) {
+    width: $width + px;
+    height: $height + px;
+    background: url($url) no-repeat;
+    background-size: cover;
+}
+
+@mixin screen-max($max)  {
+    @media (max-width: $max) {
+        @content;
+    }
+}
+
+
+
+

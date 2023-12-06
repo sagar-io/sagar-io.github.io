@@ -1,0 +1,123 @@
+.skills-page-container {
+   padding-bottom: 4rem;
+}
+
+.skills-wrapper {
+  @extend .wrapper;
+  // background-image: repeating-conic-gradient(from 198deg, $fifth-clr 0% 10%,darken($first-clr, 5%) 10% 20%);
+  border-radius: 0.5rem;
+  padding: 1rem 0;
+
+  @media(max-width: 650px) {
+    width: 80%;
+    margin-top: 4rem;
+ }
+ @media(max-width: 545px) {
+  background:rgba(165, 252, 165, 0.71);
+  background-image: none;
+  padding: 1rem;
+}
+    h2 {
+        @extend .fancy-txt;
+        -webkit-text-stroke-color:rgb(97, 7, 97);
+        color: #000000;
+        text-decoration: overline;
+        text-shadow: 0 0 3.5px gray;
+        padding-top: 0rem;
+        margin: 0;
+        padding-bottom: 2rem;
+        
+    }
+    p {
+        font-weight: bold;
+        display: inline-block;
+        font-variant: small-caps;
+        color: rgb(97, 7, 97);
+        margin: 0 0 2rem 0;
+        text-shadow: 1px 1px 3px rgb(255, 194, 194);
+    }
+
+    .skills {
+      width: 80%;
+      margin: auto;
+      @include grid(3);
+      gap: 1rem;
+      padding: 1rem;
+      @media(max-width: 545px) {
+      @include grid(2);
+         
+      }
+
+      .skill {
+        @include flex(column);
+        background-color: transparent;
+        box-shadow: 0 0 8px -3px gray;
+        color: $second-clr;
+        border-radius: 0.4rem;
+        width: 200px;
+        height: 200px;
+        padding: 1rem;
+        transition: 0.45s;
+        @media(max-width: 950px) {
+          width: 160px;
+          height: 160px;
+       }
+       @media(max-width: 770px) {
+        width: 130px;
+        height: 130px;
+     }
+       @media (max-width: 500px) {
+        width: 110px;
+        height: 110px;
+       }
+     @media(max-width: 345px) {
+      width: 100px;
+      height: 100px;
+   }
+
+        img {
+            height: 100%;
+            transform: scale(0.5);
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        h3 {
+            margin-top: 0;
+            padding-top: 0;
+
+            @media (max-width: 880px) {
+              font-size: 0.9rem;
+            }
+        }
+      }
+      .skill:hover {
+          transform: scale(1.1);
+      }
+  }
+}
+
+
+.certificates-wrapper {
+  @extend .skills-wrapper;
+
+  .certificates{
+     padding: 0 2rem;
+    .certificate {
+      padding: 1rem 0;
+      img {
+        width: 100%;
+        height: 100%;
+        border: 0.5rem solid #000000;
+        max-width: 600px;
+      }  
+      @media (max-width: 500px) {
+        padding: 0;
+      }
+    }
+
+    @media (max-width: 500px) {
+      padding: 0;
+    }
+  }
+}
