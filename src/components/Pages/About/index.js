@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const discription = (
   <div>
     👋 Hi there! <br />I combine creativity and technical skills to engineer
-    dynamic projects. I'm a Website Developer, passionate about creating
+    dynamic projects. I'm a Web Developer, passionate about creating
     innovative and intuitive user experiences. I love the open-source culture.
     <span className="highlight">
       By participating in various Hackathons and winning various developer
