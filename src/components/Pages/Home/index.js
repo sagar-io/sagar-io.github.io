@@ -50,7 +50,7 @@ function Home() {
           ))}
         </motion.div>
 
-        {/* <h2 className="my-1 job-role"> &lt;/ Web Developer &gt;</h2> */}
+        <h2 className="my-1 job-role"> &lt; Software Engineer /&gt;</h2>
 
         <Player
           src={lottieImg}
