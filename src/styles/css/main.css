@@ -1105,6 +1105,7 @@ a {
 .contact-card .name {
   color: rgba(227, 58, 46, 0.927);
   font-weight: bold;
+  font-size: 1.2rem;
 }
 .contact-card .name i {
   color: rgba(69, 139, 238, 0.973);
@@ -1138,13 +1139,14 @@ a {
   background-color: black;
 }
 .contact-card .direct-contact {
-  border-top: 2px solid rgba(0, 0, 0, 0.537);
+  user-select: text;
+  border-top: 2px solid rgba(24, 24, 24, 0.302);
 }
 .contact-card .direct-contact + .direct-contact {
-  border-bottom: 2px solid rgba(0, 0, 0, 0.537);
+  border-bottom: 2px solid rgba(24, 24, 24, 0.302);
 }
 .contact-card .direct-contact {
-  padding: 0.5rem 0;
+  padding: 1rem 0;
   font-size: 1.2rem;
 }
 .contact-card .direct-contact a {

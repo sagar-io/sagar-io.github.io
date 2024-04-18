@@ -25,9 +25,9 @@ function Contact() {
             <p className="name">
               Sagar Sharma <i className="fas fa-check-circle"></i>
             </p>
-            <a href={cv} download="sagar-sharma-cv.pdf">
+            {/* <a href='#' download="sagar-sharma-cv.pdf">
               <button className="btn">Download CV</button>
-            </a>
+            </a> */}
 
             <div className="direct-contact">
               <a href="mailto:tech.sagarsh@gmail.com" className="email">

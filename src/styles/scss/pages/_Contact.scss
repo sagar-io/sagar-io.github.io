@@ -121,6 +121,7 @@
   .name {
     color: rgba(227, 58, 46, 0.927);
     font-weight: bold;
+    font-size: 1.2rem;
 
     i {
       color: rgba(69, 139, 238, 0.973);
@@ -165,14 +166,15 @@
   }
 
   .direct-contact {
-    border-top: 2px solid rgba(0, 0, 0, 0.537);
+    user-select: text;
+    border-top: 2px solid rgba(24, 24, 24, 0.302);
   }
   .direct-contact + .direct-contact {
-    border-bottom: 2px solid rgba(0, 0, 0, 0.537);
+    border-bottom: 2px solid rgba(24, 24, 24, 0.302);
   }
 
   .direct-contact {
-    padding: 0.5rem 0;
+    padding: 1rem 0;
     font-size: 1.2rem;
 
     a {
