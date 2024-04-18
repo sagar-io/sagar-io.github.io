@@ -3,20 +3,17 @@ import { motion } from "framer-motion";
 
 const discription = (
   <div>
-    👋 Hi there! <br />I combine creativity and technical skills to engineer
-    dynamic projects. I'm a Web Developer, passionate about creating
-    innovative and intuitive user experiences. I love the open-source culture.
-    <span className="highlight">
-      By participating in various Hackathons and winning various developer
-      competitions, I learnt how to make great products with teams.
-    </span>
-    I enjoy tackling complex challenges and finding creative solutions to tough
-    problems. I'm constantly learning and pushing myself to be the best
-    developer I can be, and I'm excited to bring my skills and expertise to your
-    next project 🌱 
-    <br/><br/>
-    Outside of Programming, I run at the park and binge watch
-    shows. World tour is the thing that excites me all the time.
+    👋 Hi there! I combine creativity and technical skills to engineer dynamic
+    projects. I'm an engineer, passionate about creating innovative and
+    intuitive solutions. I have learned how to work collaboratively in a team
+    with my experience in various organizations. I love tackling complex
+    challenges and finding optimal solutions to tough problems. Besides Web
+    Development, I'm also interested in Cyber Security. I'm constantly learning
+    and pushing myself to be the best engineer I can be, and I'm excited to
+    bring my skills and expertise to your next project 🌱
+    <br />
+    <br />
+    Besides coding, I enjoy jogging in the park and binge-watching shows 👀 and traveling the world always gets me excited.
   </div>
 );
 
