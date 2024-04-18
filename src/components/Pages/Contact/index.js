@@ -1,4 +1,3 @@
-import cv from "../../../assets/cv/cv.pdf";
 import { motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 
