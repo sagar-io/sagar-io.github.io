@@ -7,9 +7,9 @@ const discription = (
     projects. I'm an engineer, passionate about creating innovative and
     intuitive solutions. I have learned how to work collaboratively in a team
     with my experience in various organizations. I love tackling complex
-    challenges and finding optimal solutions to tough problems. Besides Web
-    Development, I'm also interested in Cyber Security. I'm constantly learning
-    and pushing myself to be the best engineer I can be, and I'm excited to
+    challenges and finding optimal solutions to tough problems. I'm constantly learning
+    and pushing myself to be the best engineer I can be.
+    I'm excited to
     bring my skills and expertise to your next project 🌱
     <br />
     <br />
