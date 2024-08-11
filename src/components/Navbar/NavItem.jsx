@@ -1,5 +1,7 @@
-import { NavLink } from "react-router-dom";
+"use client"
+
 import { motion } from "framer-motion";
+import Link from 'next/link'
 
 export const NavItem = ({ name, path }) => {
   function navStyle({ isActive }) {
@@ -27,7 +29,7 @@ export const NavItem = ({ name, path }) => {
   }
 
   return (
-    <NavLink to={path} className="p-1">
+    <Link href={path} className="p-1">
       <motion.div
         className="nav-link"
         style={navStyle}
@@ -37,6 +39,6 @@ export const NavItem = ({ name, path }) => {
         <i className={iconName}></i>
         <p>{name}</p>
       </motion.div>
-    </NavLink>
+    </Link>
   );
 };
