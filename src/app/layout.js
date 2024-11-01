@@ -1,10 +1,11 @@
-import Navbar from '../components/Navbar/page';
-import '../styles/css/main.css'
+import { Analytics } from "@vercel/analytics/react";
+import Navbar from "../components/Navbar/page";
+import "../styles/css/main.css";
 
 export const metadata = {
-  title: 'Portfolio Website',
-  description: 'Sagar Sharma\'s portfolio website, web developer',
-}
+  title: "Portfolio Website",
+  description: "Sagar Sharma's portfolio website, web developer",
+};
 
 export default function RootLayout({ children }) {
   return (
@@ -34,11 +35,12 @@ export default function RootLayout({ children }) {
         <div id="root">
           <Navbar />
           {children}
-          </div>
+        </div>
         <script
           src="https://kit.fontawesome.com/8e9a2a9fdd.js"
           crossorigin="anonymous"
         ></script>
+        <Analytics />
       </body>
     </html>
   );
