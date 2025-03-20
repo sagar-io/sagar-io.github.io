@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="%PUBLIC_URL%/assets/images/s.svg" />
+        <link rel="icon" href="/assets/images/s.svg" />
         <meta name="theme-color" content="#000000" />
         <meta
           name="keyword"
@@ -28,8 +28,8 @@ export default function RootLayout({ children }) {
         />
         <meta property="og:url" content="https://sagars.me" />
         <meta property="og:type" content="website" />
-        <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+        <link rel="apple-touch-icon" href="/logo192.png" />
+        <link rel="manifest" href="/manifest.json" />
       </head>
       <body>
         <div id="root">
@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
         </div>
         <script
           src="https://kit.fontawesome.com/8e9a2a9fdd.js"
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
         ></script>
         <Analytics />
       </body>

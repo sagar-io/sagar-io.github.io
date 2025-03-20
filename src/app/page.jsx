@@ -1,8 +1,13 @@
-"use client"
+"use client";
 
-import { Player } from "@lottiefiles/react-lottie-player";
 import { motion } from "framer-motion";
-import lottieImg from "../../public/assets/lottie/hacker.json";
+import dynamic from "next/dynamic";
+
+const Player = dynamic(
+  () => import("@lottiefiles/react-lottie-player").then((mod) => mod.Player),
+  { ssr: false }
+);
+
 const name = "#Sagar";
 
 const sentence = {
@@ -54,7 +59,7 @@ export default function Page() {
         <h2 className="my-1 job-role"> &lt; Software Engineer /&gt;</h2>
 
         <Player
-          src={lottieImg}
+          src={require("../../public/assets/lottie/hacker.json")}
           autoplay
           loop
           style={{ height: "400px", width: "350px" }}
