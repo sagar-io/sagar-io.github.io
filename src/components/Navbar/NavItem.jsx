@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
 import { motion } from "framer-motion";
-import Link from 'next/link'
+import Link from "next/link";
 
 export const NavItem = ({ name, path }) => {
   function navStyle({ isActive }) {
@@ -14,6 +14,9 @@ export const NavItem = ({ name, path }) => {
       break;
     case "About":
       iconName = "fas fa-address-card";
+      break;
+    case "Experience":
+      iconName = "fas fa-briefcase";
       break;
     case "Skills":
       iconName = "fas fa-code";

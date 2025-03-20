@@ -21,7 +21,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "npx serve@latest ./build",
-    "analyze": "source-map-explorer 'build/static/js/*.js'"
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "sass": "sass src/styles/scss:src/styles/css --watch"
   },
   "eslintConfig": {
     "extends": [

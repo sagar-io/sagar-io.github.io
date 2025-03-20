@@ -10,6 +10,10 @@ const navItemsData = [
     path: "/about",
   },
   {
+    name: "Experience",
+    path: "/experience",
+  },
+  {
     name: "Skills",
     path: "/skills",
   },
@@ -34,11 +38,11 @@ const navItems = navItemsData.map((navItemData, i) => (
 function Navbar() {
   return (
     <>
-        <div className="navbar-wrapper">
-          <div className="navbar p-1">{navItems}</div>
-        </div>
+      <div className="navbar-wrapper">
+        <div className="navbar p-1">{navItems}</div>
+      </div>
     </>
-  )
+  );
 }
 
 export default Navbar;
