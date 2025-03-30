@@ -1,21 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
-
-.signature {
-     font-family: 'Permanent Marker', cursive;
-     font-size: 6rem;
-     font-weight: 400;
-     color: #5D001E;
-   //   color: $first-clr;
-
-     @media(max-width: 768px) {
-        font-size: 3.5rem;
-     }
-     @media(max-width: 425px) {
-        font-size: 3rem;
-     }
-}
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap");
 
 body {
-    font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-primary);
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  transition: var(--transition-normal);
+}
+
+p {
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  transition: var(--transition-normal);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: var(--transition-fast);
+
+  &:hover {
+    color: var(--text-secondary);
+  }
+}
+
+code {
+  font-family: monospace;
+  background: var(--game-key-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-size: 0.9em;
+  border: 1px solid var(--game-key-border);
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--bg-secondary);
 }

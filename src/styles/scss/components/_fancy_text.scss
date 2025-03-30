@@ -1,15 +1,15 @@
 .fancy-txt {
-  background: linear-gradient(to right, #155677 0% 30%, #0c93c9 48%, #a643c4c0 50%, rgba(204, 55, 142, 0.705) 60%, rgb(235, 117, 21) 80%);
+  background: var(--fancy-gradient);
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
   font-weight: bold;
-  -webkit-text-stroke: white 0.5px;
-  text-shadow: 2px 1px 7px rgba(19, 10, 10, 0.541);
+  -webkit-text-stroke: var(--text-primary) 0.5px;
+  text-shadow: 2px 1px 7px rgba(0, 0, 0, 0.2);
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-decoration-style: double;
-  text-decoration-color: rgba(241, 5, 202, 0.795);
+  text-decoration-color: var(--accent);
   text-underline-offset: 9px;
   font-size: 2.5rem;
 

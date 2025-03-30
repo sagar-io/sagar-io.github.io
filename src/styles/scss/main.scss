@@ -4,7 +4,6 @@
 @import "abstracts/placeholders";
 @import "abstracts/loops";
 
-// @import 'base/reset';
 @import "base/typography";
 @import "base/base";
 
@@ -13,20 +12,12 @@
 @import "layout/header";
 @import "layout/footer";
 @import "layout/wrapper";
-// @import 'layout/sidebar';
-// @import 'layout/forms';
 
 @import "components/buttons";
-@import "components/tinytext";
-@import "components/more_arrow";
 @import "components/fancy_text";
-// @import 'components/carousel';
-// @import 'components/cover';
-// @import 'components/dropdown';
+@import "components/DinoGame";
 
 @import "pages/home";
-@import "pages/skills";
-@import "pages/About";
 @import "pages/Projects";
 @import "pages/Contact";
 @import "pages/Experience";

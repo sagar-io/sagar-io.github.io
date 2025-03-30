@@ -1,6 +1,7 @@
 .projects-wrapper {
   @extend .wrapper;
-  margin: 2rem 0 6rem 9rem;
+  margin: 6rem 0;
+  @include flex(column);
   @media (max-width: 800px) {
     margin: 2rem 0 0 6rem;
   }
@@ -14,11 +15,41 @@
   }
   width: auto;
 
+  h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    background: var(--heading-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    position: relative;
+    color: var(--text-primary);
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 150px;
+      height: 4px;
+      background: var(--heading-underline-gradient);
+    }
+  }
+
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+
   h2 {
     @extend .fancy-txt;
     letter-spacing: 1.2px;
     margin: 0;
-    @media(max-width: 420px) {
+    @media (max-width: 420px) {
       font-size: 1.3rem;
     }
   }
@@ -45,6 +76,9 @@
     margin-top: 3rem;
     position: relative;
     max-width: 450px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     .laptop-img {
       @media (min-width: 1201px) {
         width: 320px;
@@ -86,7 +120,6 @@
         width: 209px;
         height: 132px;
         top: 0.5rem;
-        // diff 77
       }
       @media (max-width: 1050px) {
         width: 178px;
@@ -125,10 +158,10 @@
         @include flex(column);
 
         a {
-            font-size: 0.7rem !important;
+          font-size: 0.7rem !important;
         }
-        a:last-child{
-            border-top: none;
+        a:last-child {
+          border-top: none;
         }
       }
       margin-top: -8%;
@@ -136,7 +169,7 @@
       justify-content: center;
       align-items: center;
 
-      @media(max-width: 375px) {
+      @media (max-width: 375px) {
         margin-top: -4%;
       }
       .arrow {
@@ -149,16 +182,23 @@
       }
 
       a {
-        border: 1px solid currentColor;
+        border: 1px solid var(--accent);
         padding: 5px 8px;
         display: block;
-        color: $first-clr;
+        color: var(--accent);
         font-size: 0.9rem;
+
+        &:hover {
+          background: var(--accent);
+          color: var(--bg-secondary);
+        }
       }
-      a:hover {
-        background-color: black;
-        color: $third-clr;
-      }
+    }
+    .project-title {
+      color: var(--text-primary);
+    }
+    .project-description {
+      color: var(--text-secondary);
     }
   }
 }

@@ -3,8 +3,8 @@ import Navbar from "../components/Navbar/page";
 import "../styles/css/main.css";
 
 export const metadata = {
-  title: "Portfolio Website",
-  description: "Sagar Sharma's portfolio website, web developer",
+  title: "Sagar Sharma | Software Engineer",
+  description: "Sagar Sharma's portfolio website, Software Engineer",
 };
 
 export default function RootLayout({ children }) {

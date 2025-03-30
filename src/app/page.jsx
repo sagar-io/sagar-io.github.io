@@ -2,6 +2,9 @@
 
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
+import Experience from "../components/Pages/Experience/Experience.js";
+import Projects from "../components/Pages/Projects/Projects.js";
+import DinoGame from "../components/DinoGame/DinoGame.js";
 
 const Player = dynamic(
   () => import("@lottiefiles/react-lottie-player").then((mod) => mod.Player),
@@ -9,6 +12,9 @@ const Player = dynamic(
 );
 
 const name = "#Sagar";
+
+// TODO: add feature flag to handle this -
+const showDinoGame = false;
 
 const sentence = {
   hidden: { opacity: 1 },
@@ -35,36 +41,56 @@ const word = {
 
 export default function Page() {
   return (
-    <motion.div
-      className="home-wrapper"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ delay: 0.1 }}
-    >
-      <div className="home">
+    <div>
+      <section id="home">
         <motion.div
-          className="signature my-1"
-          initial="hidden"
-          animate="visible"
-          variants={sentence}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ delay: 0.1 }}
+          className="home"
         >
-          {name.split("").map((char, i) => (
-            <motion.span custom={i} variants={word} key={char + "-" + i}>
-              {char}
-            </motion.span>
-          ))}
+          <div>
+            <Player
+              src={require("../../public/assets/lottie/hacker.json")}
+              autoplay
+              loop
+              style={{ height: "400px", width: "350px" }}
+            />
+          </div>
+          <div>
+            <motion.div
+              className="signature"
+              initial="hidden"
+              animate="visible"
+              variants={sentence}
+            >
+              {name.split("").map((char, i) => (
+                <motion.span custom={i} variants={word} key={char + "-" + i}>
+                  {char}
+                </motion.span>
+              ))}
+            </motion.div>
+            <p>
+              I'm a software engineer with a passion for building scalable and
+              efficient systems. I've recently wrapped up my internship as a
+              Frontend Engineer Intern at Smallcase (raised $50M). I worked with{" "}
+              <span className="skill-set">
+                HTML, CSS/Sass, JavaScript, React, TypeScript, Next.js, C++.
+              </span>{" "}
+            </p>
+          </div>
         </motion.div>
-
-        <h2 className="my-1 job-role"> &lt; Software Engineer /&gt;</h2>
-
-        <Player
-          src={require("../../public/assets/lottie/hacker.json")}
-          autoplay
-          loop
-          style={{ height: "400px", width: "350px" }}
-        />
-      </div>
-    </motion.div>
+      </section>
+      <section id="experience">
+        <Experience />
+      </section>
+      <section id="projects">
+        <Projects />
+      </section>
+      <section id="footer">
+        {showDinoGame && <DinoGame />}
+      </section>
+    </div>
   );
 }

@@ -1,0 +1,231 @@
+.dino-game-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: var(--card-radius);
+  box-shadow: var(--shadow-md);
+
+  .game-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    .score {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: var(--text-primary);
+    }
+
+    .start-btn {
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: var(--card-radius);
+      background: var(--game-button-gradient);
+      color: var(--bg-secondary);
+      cursor: pointer;
+      font-weight: bold;
+      transition: all var(--transition-normal);
+      
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: var(--shadow-sm);
+      }
+    }
+  }
+
+  .game {
+    height: 150px;
+    width: 100%;
+    border-bottom: 2px solid var(--game-border);
+    position: relative;
+    overflow: hidden;
+    background-color: var(--game-bg);
+    border-radius: var(--card-radius);
+
+    .dino {
+      width: 44px;
+      height: 47px;
+      position: absolute;
+      bottom: 0;
+      left: 20px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+    }
+
+    .jump {
+      animation: jump 0.5s linear;
+    }
+
+    .obstacle {
+      width: 20px;
+      height: 40px;
+      background-color: var(--game-obstacle);
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      animation: obstacle 1.5s infinite linear;
+    }
+  }
+}
+
+@keyframes jump {
+  0% {
+    bottom: 0;
+  }
+  40% {
+    bottom: 80px;
+  }
+  60% {
+    bottom: 80px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+@keyframes obstacle {
+  0% {
+    right: -20px;
+  }
+  100% {
+    right: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .dino-game-container {
+    .game {
+      height: 120px;
+
+      .dino {
+        width: 33px;
+        height: 35px;
+      }
+
+      .obstacle {
+        width: 15px;
+        height: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .dino-game-container {
+    .game {
+      height: 100px;
+
+      .dino {
+        width: 27px;
+        height: 29px;
+      }
+
+      .obstacle {
+        width: 12px;
+        height: 25px;
+      }
+    }
+
+    .game-info {
+      .score {
+        font-size: 1rem;
+      }
+
+      .start-btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+.footer-game-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(to bottom, transparent, var(--footer-bg));
+  text-align: center;
+
+  .footer-message {
+    margin-bottom: 2rem;
+
+    h3 {
+      font-size: 2rem;
+      color: var(--footer-heading);
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: var(--text-primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .game-instructions {
+      font-size: 0.9rem;
+      color: var(--game-text);
+      margin-top: 1rem;
+
+      .key {
+        display: inline-block;
+        padding: 0.2rem 0.5rem;
+        background: var(--game-key-bg);
+        border: 1px solid var(--game-key-border);
+        border-radius: 4px;
+        font-family: monospace;
+        margin: 0 0.3rem;
+      }
+
+      .mobile-instruction {
+        font-size: 0.8rem;
+        opacity: 0.8;
+        display: none;
+        @media (max-width: 768px) {
+          display: block;
+          margin-top: 0.5rem;
+        }
+      }
+    }
+  }
+
+  .dino-game-container {
+    background: transparent;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+    .game {
+      border-radius: 4px;
+    }
+  }
+
+  .footer-credits {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: var(--footer-text);
+
+    .easter-egg {
+      margin-top: 0.5rem;
+      font-size: 0.8rem;
+      color: var(--footer-heading);
+      opacity: 0;
+      transform: translateY(10px);
+      animation: fadeInUp 0.5s ease forwards 1s;
+    }
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.jump,
+.obstacle {
+  transition: none !important;
+}

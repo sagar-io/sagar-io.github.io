@@ -4,6 +4,8 @@
   height: 100vh;
   @include flex();
   overflow: hidden;
+  background: var(--bg-secondary);
+  box-shadow: var(--shadow-lg);
 }
 .parcel-wrapper {
   position: relative;
@@ -28,7 +30,6 @@
   }
 }
 
-// Parcel Styles start
 .parcel {
   box-shadow: 0 0 8px -2px black;
   background-color: rgba(235, 52, 52, 0.84);
@@ -110,11 +111,10 @@
   color: black;
 
   @media (max-width: 500px) {
-  content: "Click Me";
+    content: "Click Me";
   }
 }
 
-// Parcel Styles end
 
 .contact-card {
   transition: 0.3s;
@@ -323,9 +323,6 @@
   }
 }
 
-
-
-// Intro Popup 
 .intro-popup {
   position: absolute;
   top: -30%;
@@ -338,7 +335,7 @@
   animation: transitionPopup 2s ease-in-out;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 200%;
     height: 1px;
@@ -352,11 +349,59 @@
   }
 }
 @keyframes transitionPopup {
-  0%{transform: translateX(-200%);
-  opacity: 0;
-}
-  100%{
+  0% {
+    transform: translateX(-200%);
+    opacity: 0;
+  }
+  100% {
     transform: translateX(0);
-     opacity: 1;
+    opacity: 1;
+  }
+}
+
+.contact-wrapper {
+  .contact-form {
+    .form-group {
+      label {
+        color: var(--text-primary);
+      }
+
+      input,
+      textarea {
+        background: var(--bg-primary);
+        border: 1px solid var(--border);
+        color: var(--text-primary);
+        transition: var(--transition-fast);
+
+        &:focus {
+          border-color: var(--accent);
+          box-shadow: var(--shadow-sm);
+        }
+      }
+    }
+
+    button {
+      background: var(--game-button-gradient);
+      color: var(--bg-secondary);
+      border: none;
+      transition: var(--transition-normal);
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-md);
+      }
+    }
+  }
+
+  .social-links {
+    a {
+      color: var(--text-secondary);
+      transition: var(--transition-fast);
+
+      &:hover {
+        color: var(--accent);
+        transform: translateY(-2px);
+      }
+    }
   }
 }

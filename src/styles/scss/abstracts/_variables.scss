@@ -4,7 +4,7 @@
 // $fourth-clr: #E3E2DF;
 // $fifth-clr: rgba(187, 184, 184, 0.89);
 // $sixth-clr: #5D001E;
-$first-clr : #25274D;
+$first-clr: #25274d;
 $second-clr: #464866;
 $third-clr: #aaabb8;
 $fourth-clr: #2e9cca;
@@ -14,3 +14,147 @@ $fifth-clr: #2e9cca;
 // $laptop-img-size: 320;
 $mobileNavBar: 500px;
 $tabletNavBar: 650px;
+
+// Theme colors
+:root {
+  // Base colors
+  --bg-primary: #f7f7f7;
+  --bg-secondary: #ffffff;
+  --text-primary: #25274d;
+  --text-secondary: #5d001e;
+  --accent: #0c93c9;
+  --border: #ddd;
+
+  // Specific component colors
+  --signature-color: #5d001e;
+  --nav-bg: rgba(255, 255, 255, 0.8);
+  --nav-text: #25274d;
+  --nav-active: #5d001e;
+
+  // Dino game colors
+  --game-bg: #f7f7f7;
+  --game-border: #333;
+  --game-obstacle: #333;
+  --game-text: #666;
+  --game-key-bg: #f0f0f0;
+  --game-key-border: #ddd;
+  --game-button-gradient: linear-gradient(
+    45deg,
+    var(--text-secondary),
+    var(--text-primary)
+  );
+
+  // Footer colors
+  --footer-bg: rgba(37, 39, 77, 0.1);
+  --footer-text: #666;
+  --footer-heading: #5d001e;
+
+  // Skill set colors
+  --skill-highlight: #aaabb8;
+
+  // Fancy text gradient
+  --fancy-gradient: linear-gradient(
+    to right,
+    var(--text-primary) 0% 30%,
+    var(--accent) 48%,
+    var(--text-secondary) 50%,
+    var(--accent) 60%,
+    var(--text-secondary) 80%
+  );
+
+  // Shadows
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+
+  // Transitions
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+
+  // Animation
+  --animation-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --animation-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --animation-spring: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  // Animation durations
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --duration-slow: 500ms;
+
+  // Card and container styles
+  --card-radius: 8px;
+  --container-padding: 2rem;
+  --section-spacing: 4rem;
+
+  // Backdrop filters
+  --blur-sm: blur(4px);
+  --blur-md: blur(8px);
+  --blur-lg: blur(16px);
+
+  // Z-index layers
+  --z-nav: 1000;
+  --z-modal: 1100;
+  --z-tooltip: 1200;
+  --z-theme-switch: 1300;
+
+  // Add missing gradient variables
+  --heading-gradient: linear-gradient(
+    45deg,
+    var(--text-secondary),
+    var(--text-primary)
+  );
+  --heading-underline-gradient: linear-gradient(
+    90deg,
+    transparent,
+    var(--text-secondary),
+    transparent
+  );
+}
+
+[data-theme="dark"] {
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #2d2d2d;
+  --text-primary: #ffffff;
+  --text-secondary: #aaabb8;
+  --accent: #0c93c9;
+  --border: #404040;
+
+  // Specific component colors
+  --signature-color: #aaabb8;
+  --nav-bg: rgba(45, 45, 45, 0.8);
+  --nav-text: #ffffff;
+  --nav-active: #0c93c9;
+
+  // Dino game colors
+  --game-bg: #2d2d2d;
+  --game-border: #404040;
+  --game-obstacle: #aaabb8;
+  --game-text: #cccccc;
+  --game-key-bg: #404040;
+  --game-key-border: #555555;
+  --game-button-gradient: linear-gradient(45deg, #0c93c9, #25274d);
+
+  // Footer colors
+  --footer-bg: rgba(12, 147, 201, 0.1);
+  --footer-text: #cccccc;
+  --footer-heading: #0c93c9;
+
+  // Skill set colors
+  --skill-highlight: #25274d;
+
+  // Fancy text gradient for dark mode
+  --fancy-gradient: linear-gradient(
+    to right,
+    #0c93c9 0% 30%,
+    #155677 48%,
+    rgba(166, 67, 196, 0.75) 50%,
+    rgba(204, 55, 142, 0.705) 60%,
+    rgb(235, 117, 21) 80%
+  );
+
+  // Shadows for dark theme
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.2);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
