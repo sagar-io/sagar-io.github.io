@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
         </div>
         <script
           src="https://kit.fontawesome.com/8e9a2a9fdd.js"
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
         ></script>
         <Analytics />
       </body>
