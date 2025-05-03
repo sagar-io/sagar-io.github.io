@@ -1,0 +1,47 @@
+[
+    {
+        "companyName": "Headout",
+        "logo": "/assets/images/headout.jpeg",
+        "roles": [
+            {
+                "roleName": "Software Engineer Intern",
+                "startDate": "May 2025",
+                "endDate": "Present"
+            }
+        ]
+    },
+    {
+        "companyName": "smallcase",
+        "logo": "/assets/images/smallcase_logo.jpeg",
+        "roles": [
+            {
+                "roleName": "Frontend Engineer Intern",
+                "startDate": "Jul 2024",
+                "endDate": "Mar 2025"
+            }
+        ]
+    },
+    {
+        "companyName": "Swaja Robotics",
+        "logo": "/assets/images/iot-cloud-signal.svg",
+        "roles": [
+            {
+                "roleName": "Software Developer Intern",
+                "startDate": "Mar 2024",
+                "endDate": "Jun 2024"
+            }
+        ]
+    },
+    {
+        "companyName": "AI Apocalypto",
+        "logo": "/assets/images/aiapocalypto_logo.svg",
+
+        "roles": [
+            {
+                "roleName": "Web3 Frontend Intern",
+                "startDate": "Aug 2023",
+                "endDate": "Feb 2024"
+            }
+        ]
+    }
+]

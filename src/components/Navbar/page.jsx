@@ -6,8 +6,8 @@ const navItemsData = [
     path: "/",
   },
   {
-    name: "About",
-    path: "/about",
+    name: "Experience",
+    path: "/experience",
   },
   {
     name: "Skills",

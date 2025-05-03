@@ -42,7 +42,9 @@
     ]
   },
   "devDependencies": {
+    "@types/node": "22.14.1",
     "gh-pages": "^4.0.0",
-    "source-map-explorer": "^2.5.3"
+    "source-map-explorer": "^2.5.3",
+    "typescript": "5.8.3"
   }
 }

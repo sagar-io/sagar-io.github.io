@@ -12,8 +12,8 @@ export const NavItem = ({ name, path }) => {
     case "Home":
       iconName = "fas fa-home";
       break;
-    case "About":
-      iconName = "fas fa-address-card";
+    case "Experience":
+      iconName = "fas fa-briefcase";
       break;
     case "Skills":
       iconName = "fas fa-code";
